@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/bike.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900" rel="stylesheet">
-
+    <script src="js/navigation.js"></script>
     <title>Re-Cycle | Your Eco friendly Tours</title>
 </head>
 
@@ -19,13 +19,22 @@
                     <button type="submit"></button>
                 </form>
             </div>
-            <div role="banner" class="headNavCell headNavDesktop">
+            <div role="banner" class="headNavCell headNavDesktop" id="navbar">
                 <a href="index.html"><img src="img/logo/logo.png" alt="logo re-cycle" class="mainLogo"></a>
                 <div class="naviCell naviDesktop">
                     <ul>
-                        <li><a href="about.html"><img class="icon" src="img/icon/home.svg"></a></li>
-                        <li><a href="tours.html"><img class="icon" src="img/icon/cntct.svg"></a></li>
-                        <li><a href="contact.html"><img class="icon" src="img/icon/tour.svg"></a></li>
+                        <li>
+                            <a href="index.html">home</a>
+                        </li>
+                        <li>
+                            <a href="#">about</a>
+                        </li>
+                        <li>
+                            <a href="tours.html">tours</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -61,15 +70,19 @@
             <footer role="contentinfo">
                 <div class="blockquoteWrap">
                     <aside role="complementary">
-                        <a href="#" target="_blank">
-                            <h3>10 reasons biking is health benefitial</h3>
-                            <ol>
+                        <h3>10 reasons biking is health benefitial</h3>
+                        <ol>
+                            <a href="#" target="_blank">
                                 <li>Cycling improves your mental being - ...</li>
+                            </a>
+                            <a href="#" target="_blank">
                                 <li>You will start seing weightloss - ...</li>
+                            </a>
+                            <a href="#" target="_blank">
                                 <li>You will start building m...</li>
-                            </ol>
-                            <p>click to read more</p>
-                        </a>
+                            </a>
+                        </ol>
+                        <p>click to read more</p>
                     </aside>
                 </div>
                 <div class="partnerWrap">
@@ -89,13 +102,13 @@
                 <div class="contactWrap">
                     <h3>Contact Us</h3>
                     <ul>
-                        <a href="contact.html"><img class="footIcon" src="img/icon/mail.svg">
+                        <a href="contact.html">
                             <li>e-mail us: biketours@bikes.org</li>
                         </a>
-                        <a href="contact.html"><img class="footIcon" src="img/icon/phone.svg">
-                            <li>call us at: 0047-biketour-255</li>
+                        <a href="contact.html">
+                            <li>Call us at: 0047-biketour-255</li>
                         </a>
-                        <a href="contact.html"><img class="footIcon" src="img/icon/adresse.svg">
+                        <a href="contact.html">
                             <li>Find us at: Gateport rd. 29 | rockydale 2040 Bikington</li>
                         </a>
                     </ul>
@@ -104,5 +117,4 @@
         </div>
     </div>
 </body>
-
 </html>
