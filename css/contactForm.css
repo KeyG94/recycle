@@ -1,0 +1,87 @@
+.MainContentWrapDesktop{
+    background: url(../img/jpg/sunsetBikeBackground.png) no-repeat center;
+    background-size: cover;
+    padding: 40px 0 !important;
+}
+
+.contactWrapMobile{
+    padding: 0;
+    background: transparent;
+}
+
+.articleWrapCell{
+    background-color: transparent;
+    margin-bottom: 2em !important;
+    border: 0 !important;
+}
+
+.col2{
+    background: transparent !important;
+    color: rgba(255,255,255, 0.9) !important;
+    height: auto;
+}
+
+.col2 p{
+    text-shadow: whitesmoke 1px 0 1px;
+    padding: 2.5em !important;
+}
+
+.col2 h2{
+    color: rgba(255,255,255, 0.9) !important;
+    border-bottom: 1px dotted white;
+    font-size: 5em !important;
+    text-align: center;
+}
+
+.col2 h3{
+    font-size: 3em !important;
+    text-align: center;
+    color: rgba(255,255,255, 0.9) !important;
+}
+
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contact-form-text{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    box-sizing: border-box;
+    margin: 2em 0;
+    border: 0;
+    background: #212121;
+    padding: 20px 40px;
+    outline: none;
+    color: rgba(255,255,255, 0.9);
+    transition: 0.5s;
+    resize: none;
+}
+
+.contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #ED6A5A;
+}
+
+textarea.contact-form-text{
+    height:120px;
+}
+
+.contact-form-btn{
+    float: right;
+    border: 0;
+    background: rgba(237,106,90,0.6);
+    color: whitesmoke;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact-form-btn:hover{
+    background: rgb(237,106,90);
+}

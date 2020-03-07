@@ -108,7 +108,7 @@ em {
     }
 
     .naviCell a:hover{
-        color: #5D576B;
+        color: #ED6A5A;
     }
     
     .headNavCellBox .search-container {
@@ -144,10 +144,6 @@ em {
     }
 /*header bottom ---------------------*/
 /* body ---------------------*/
-    .contactWrapMobile {
-        background: #F4F1BB;
-        width: 100%;
-    }
     
     .col1 {
         background-color: #9BC1BC;
@@ -465,6 +461,11 @@ em {
         padding: 5px 10px;
         color: black;
         font-size: 1.8rem;
+        transition: 0.5s;
+    }
+
+    .naviDesktop a:hover{
+        color: #ED6A5A;
     }
     
     .headNavDesktopBox .search-container {
