@@ -1,3 +1,3 @@
 const btnFeedback = document.addEventListener('submit', function() {
-    alert('Thank You for submitting your message!')
+    alert('Thank You, we have recieved your order!')
 });

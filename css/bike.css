@@ -152,7 +152,7 @@ em {
         
     }
     
-    .col1 h2, .col2 h2 {
+    .col1 h2{
         font-size: 7em;
         color: #5D576B;
     }
@@ -162,10 +162,12 @@ em {
         color: #ED6A5A;
         margin-top: 4em;
     }
-    
-    .col1 iframe {
-        float: right;
-        margin: 6em 0 1em 1em;
+
+    .col2 iframe {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 2em auto 0;
     }
     
     .col1 p {
@@ -240,17 +242,28 @@ em {
         border: 2px solid #F4F1BB;
     }
     
-    .col2 h3 {
-        font-size: 4em;
-        margin-top: 4em;
-    }
-    
     .col2 p {
         font-size: 2em;
+        margin: 0 auto;
+    }
+
+    select.dropdown{
+       width: 95%;
+    }
+
+    input.custom-select-date{
+       width: 95%;
+    }
+
+    .contact-form-btn{
+        margin: 2em auto;
+        float: none !important;
+        display: flex;
+        align-content: center;
     }
     
     #instructionParagraf {
-        margin-top: 10em;
+        margin: 6em auto 0;
     }
     
     .formWrapCell {
@@ -520,12 +533,14 @@ em {
         margin-top: 4em;
     }
     
-    .col1 iframe {
-        float: right;
-        margin: 6em 0 1em 1em;
+    .col2 iframe {
+        width: 55%;
+        display: flex;
+        align-items: center;
+        margin: 2em auto 5px;
     }
     
-    .col1 p {
+    .col2 p {
         font-size: 2em;
     }
     
@@ -595,11 +610,6 @@ em {
     
     .txtbox:active {
         border: 2px solid #F4F1BB;
-    }
-    
-    .col2 h3 {
-        font-size: 4em;
-        margin-top: 4em;
     }
     
     .col2 p {
@@ -766,10 +776,6 @@ em {
 }
 
 @media screen and (min-width:300px) and (max-width: 892px){
-    .search-container{
-        display:none;
-    }
-
     .headNavCell{
         min-width: 100vw;
     }

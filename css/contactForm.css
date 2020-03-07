@@ -4,6 +4,12 @@
     padding: 40px 0 !important;
 }
 
+.tourCover{
+    background: url(../img/jpg/mountainBikeBackground.png) no-repeat center;
+    background-size: cover;
+    padding: 40px 0 !important;
+}
+
 .contactWrapMobile{
     padding: 0;
     background: transparent;
@@ -34,9 +40,9 @@
 }
 
 .col2 h3{
-    font-size: 3em !important;
+    font-size: 3em;
     text-align: center;
-    color: rgba(255,255,255, 0.9) !important;
+    color: rgba(255,255,255, 0.9);
 }
 
 .contact-form{
@@ -84,4 +90,50 @@ textarea.contact-form-text{
 
 .contact-form-btn:hover{
     background: rgb(237,106,90);
+}
+
+.dropdown{
+    display: block;
+    width: 50%;
+    font-size: 24px;
+    box-sizing: border-box;
+    margin: 2em auto;
+    border: 0;
+    background: #212121;
+    padding: 20px 40px;
+    outline: none;
+    color: rgba(255,255,255, 0.9);
+    transition: 0.5s;
+    resize: none;
+}
+
+.custom-select-date{
+    display: block;
+    width: 50%;
+    font-size: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border: 0;
+    background: #212121;
+    padding: 20px 40px;
+    outline: none;
+    color: rgba(255,255,255, 0.9);
+    transition: 0.5s;
+    resize: none;
+}
+
+/*Remove autofill that the browser curses you with.*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 0;
+  -webkit-text-fill-color: whitesmoke;
+  -webkit-box-shadow: 0 0 10px 4px #ED6A5A;
+  transition: background-color 5000s ease-in-out 0s;
 }
