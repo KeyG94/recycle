@@ -16,6 +16,12 @@
     padding: 40px 0 !important;
 }
 
+.index-cover{
+    background: url(../img/jpg/orangeBikeBackground.png) no-repeat center;
+    background-size: cover;
+    padding: 40px 0 !important;
+}
+
 .contactWrapMobile{
     padding: 0;
     background: transparent;
