@@ -95,9 +95,13 @@ textarea.contact-form-text{
     padding: 12px 50px;
     border-radius: 20px;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.4s;
     font-size: 16px;
     outline: none;
+}
+
+a .contact-form-btn{
+    max-width: 60px;
 }
 
 .contact-form-btn:hover{
@@ -148,4 +152,8 @@ select:-webkit-autofill:focus {
   -webkit-text-fill-color: whitesmoke;
   -webkit-box-shadow: 0 0 10px 4px #ED6A5A;
   transition: background-color 5000s ease-in-out 0s;
+}
+
+html.sr .col2, html.sr .headImg {
+    visibility: hidden;
 }
