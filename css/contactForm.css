@@ -100,12 +100,22 @@ textarea.contact-form-text{
     outline: none;
 }
 
-a .contact-form-btn{
-    max-width: 60px;
-}
-
 .contact-form-btn:hover{
     background: rgb(237,106,90);
+}
+
+.navigation-btn {
+    float: right;
+    border: 0;
+    background: rgba(237,106,90,0.6);
+    color: whitesmoke;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    font-size: 16px;
+    outline: none;
+    margin-top: 2em;
 }
 
 .dropdown{
