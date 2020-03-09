@@ -95,13 +95,32 @@ textarea.contact-form-text{
     padding: 12px 50px;
     border-radius: 20px;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.4s;
     font-size: 16px;
     outline: none;
 }
 
 .contact-form-btn:hover{
     background: rgb(237,106,90);
+}
+
+.navigation-btn {
+    float: right;
+    border: 0;
+    background: rgba(237,106,90,0.4);
+    color: whitesmoke;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    font-size: 16px;
+    outline: none;
+    margin: 2em 0;
+}
+
+.navigation-btn:hover{
+    background: rgba(237,106,90,0.9);
+    transition: ease-in 0.4s;
 }
 
 .dropdown{
@@ -117,6 +136,10 @@ textarea.contact-form-text{
     color: rgba(255,255,255, 0.9);
     transition: 0.5s;
     resize: none;
+}
+
+.dropdown:focus, .custom-select-date:focus{
+    box-shadow: 0 0 10px 4px #ED6A5A;
 }
 
 .custom-select-date{
@@ -148,4 +171,12 @@ select:-webkit-autofill:focus {
   -webkit-text-fill-color: whitesmoke;
   -webkit-box-shadow: 0 0 10px 4px #ED6A5A;
   transition: background-color 5000s ease-in-out 0s;
+}
+
+html.sr .col2, html.sr .headImg, html.sr iframe {
+    visibility: hidden;
+}
+
+.clearfix{
+    clear:both;
 }
