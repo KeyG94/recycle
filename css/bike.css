@@ -542,6 +542,7 @@ em {
     
     .col2 p {
         font-size: 2em;
+        text-align: center;
     }
     
     .col1 em {
@@ -778,6 +779,7 @@ em {
 @media screen and (min-width:300px) and (max-width: 892px){
     .headNavCell{
         min-width: 100vw;
+        z-index: 2;
     }
 
     .mainLogo{
