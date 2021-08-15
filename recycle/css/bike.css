@@ -1,0 +1,853 @@
+/*style css*/
+
+/* color pallete ------
+#ED6A5A rgb(237,106,90) pink/red/orange Terra Cotta
+#F4F1BB rgb(244,241,187) Blonde 
+#9BC1BC rgb(155,193,188) Cambridge Blue
+#5D576B rgb(93,87,107) Black Coral
+#E6EBE0 rgb(230,235,224) Platinum
+*/
+/* font */
+
+/* ---font-family: 'Merriweather', serif; ---*/
+
+/* Global settings*/
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: 'Merriweather', serif;
+}
+
+b {
+    font-size:inherit;
+}
+body {
+    min-width: 250px;
+    max-width: 100vw;
+}
+
+.icon {
+    height: 30px;
+    width: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #F4F1BB;
+}
+
+a:hover {
+    color: #ED6A5A;
+}
+
+em {
+    font-size: inherit;
+    color: inherit;
+}
+/* --- too small screen size -----*/
+
+@media screen and (min-width: 0px) and (max-width: 299px) {
+    * {
+        display:none;
+    }
+}
+/*----- Iphone 6 and less --------*/
+@media screen and (min-width: 300px) and (max-width: 892px) {
+    
+
+
+/*---header -----------*/
+    .headNavCellBox {
+        background-color: #ED6A5A;
+        display: block;
+        margin-bottom: 0;
+    }
+    
+    .mainLogo {
+        width: 70%;
+        margin-left: 6%;
+    }
+    
+    .headNavCell {
+        position:fixed;
+        top: 0;
+        display: inline;
+        background: rgba(237,106,90, 0.97);
+        min-width: 118px;
+        max-width: 200px;
+        transition: top 0.5s;
+    }
+    
+    .icon {
+        width: 26%;
+        padding: 0 3%; 
+    }
+    
+    .naviCell {
+        display: flex;
+        background: rgba(255,255,255, 0.9);
+    }
+    
+    .naviCell ul {
+        justify-content: space-around;
+        width: 100%;
+        margin: 0px auto;
+    }
+    
+    .naviCell ul li{
+        display: inline;
+        margin: 1px;
+        padding: auto;
+    }
+
+    .naviCell a{
+        font-size: 15px;
+        font-weight: 700;
+        color: black;
+    }
+
+    .naviCell a:hover{
+        color: #ED6A5A;
+    }
+    
+    .headNavCellBox .search-container {
+        float: right;
+    }
+
+    .headNavCellBox input[type=text] {
+        padding: 1em;
+        margin-top: 0.2em;
+        font-size: 1em;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .headNavCellBox .search-container button {
+        float: right;
+        padding: 1em 1.2em;
+        margin: 0.2em 0.2em;
+        background-image: url(../img/icon/search.svg);
+        background-repeat: no-repeat;
+        font-size: 1.6em;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .headNavCellBox:after {
+        content: " ";
+        visibility: hidden;
+        display:block;
+        height: 0;
+        clear: both;
+    }
+/*header bottom ---------------------*/
+/* body ---------------------*/
+    
+    .col1 {
+        background-color: #9BC1BC;
+        padding: 5% 1% 2% 1%;
+        border-top-style: groove;
+        
+    }
+    
+    .col1 h2{
+        font-size: 7em;
+        color: #5D576B;
+    }
+    
+    .col1 h3{
+        font-size: 3em;
+        color: #ED6A5A;
+        margin-top: 4em;
+    }
+
+    .col2 iframe {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 2em auto 0;
+    }
+    
+    .col1 p {
+        font-size: 2em;
+    }
+    
+    .col1 em {
+        font-size: 1em;
+        font-weight: 700;
+    }
+    
+    .col2, .formWrapCell {
+        background-color:#F4F1BB;
+        padding: 5% 0 2% 0;
+    }
+    
+    .contactFormCell {
+        background: white;
+        padding: 2% 0;
+        margin: 10% auto;
+        width: 100%;
+        height: 800px;
+        
+    }
+    
+    .formContainer {
+        background: #E6EBE0;
+        width: 75%;
+        margin: 5% auto;
+        padding: 5% 1%;
+        border: 2px dotted black;
+        border-radius: 10px;
+        text-align: center;
+        clear:both;
+    }
+    
+    .formContainer h2 {
+        color: #ED6A5A;
+        font-size: 2.5em;
+    }
+    
+    .formContainer input, .formContainer select{
+        display:block;
+        font-size: 2.5em;
+        margin: 1em 0 1em;
+        border-radius: 10px;
+        border: 1px dashed #DBFE87; 
+        width: 75%;
+    }
+    
+    #book {
+        width: 80%;
+        display: inline-block;
+        background-color: #ED6A5A;
+        color: #F4F1BB;
+        font-size: 4em;
+    }
+    
+    .txtbox {
+        min-width: 90%;
+        max-width: 90%;
+        min-height: 200px;
+        max-height: 200px;
+        font-size: 1.6em;
+        overflow: auto;
+        border: 2px dashed grey;
+        padding: 1%;
+        
+    }
+    
+    .txtbox:active {
+        border: 2px solid #F4F1BB;
+    }
+    
+    .col2 p {
+        font-size: 2em;
+        margin: 0 auto;
+    }
+
+    select.dropdown{
+       width: 95%;
+    }
+
+    input.custom-select-date{
+       width: 95%;
+    }
+
+    .contact-form-btn{
+        margin: 2em auto;
+        float: none !important;
+        display: flex;
+        align-content: center;
+    }
+    
+    #instructionParagraf {
+        margin: 6em auto 0;
+    }
+    
+    .formWrapCell {
+        background:#F4F1BB;
+    }
+    
+    .articleWrapCell {
+        margin-top: 17%;
+        width: 100%;
+        padding: 5% 0;
+    }
+    
+    .articleWrapCell h3 {
+        margin: 5% 1% 0 1%;
+        font-size: 1.5em;
+    }
+    
+    .articleWrapCell h4 {
+        font-size: 3em;
+        padding: 1% 2%;
+        
+    }
+    
+       .articleWrapDesktop a {
+        font-size: inherit;
+        color: inherit;
+    }
+    
+    .rollImg img {
+        width: 100%;
+    }
+    
+    .headImg img {
+        width: 100%;
+    }
+    
+    h2 {
+        color: #5D576B;
+        font-size: 5em;
+        margin-left: 0.1em
+    }
+    
+    p {
+        font-size: 2em;
+        margin: 2em 1em 2em 0.2em
+    }
+    
+    .a1 {
+        background: #F4F1BB;
+        border-top: 2em solid #F4F1BB;
+        border-top-style: groove;
+    }
+    .a2 {
+        background: #9BC1BC;
+        border-top: 2em solid #9BC1BC;
+        border-top-style: groove;
+    }
+/* body bottom -----------------------*/
+/* footer -----------------------------*/
+    .footWrapCell {
+        background-color: #5D576B;
+    }
+    
+    .footWrapCell:after {
+        content: " ";
+        visibility: hidden;
+        display:block;
+        height: 0;
+        clear: both;
+    }
+    .footWrapCell img {
+        width: 12%
+    }
+    
+    .blockquoteWrap {
+        float:left;
+        width: 25%;
+        line-height:1.5;
+        margin: 2% 2% 0 0;
+        min-width: 180px;
+        
+    }
+    
+    .blockquoteWrap h3 {
+        color: #F4F1BB;
+        font-size: 2.5em;
+        margin-left: 3%;
+    }
+
+    .blockquoteWrap p{
+        color: white;
+        text-decoration: underline;
+    }
+    
+    .blockquoteWrap li {
+        font-size: 1.3em;
+        margin-left: 9%;
+        margin-top: 7%;
+        color: white;
+    }
+    
+    .partnerWrap {
+        width: 30%;
+        display: inline-block;
+        margin: 2% 2% 2% 0;
+    }
+    
+    .partnerWrap h3 {
+        font-size: 2.5em;
+        color: #F4F1BB;
+    }
+    .partnerWrap li {
+        margin-top: 10%;
+        list-style: none;
+        font-size: 1.3em;
+        color: white;
+    }
+    
+    .contactWrap {
+        flex-wrap: wrap;
+        width: 40%;
+        display: inline-block;    
+    }
+    
+    .contactWrap h3 {
+        font-size: 2.5em;
+        color: #F4F1BB;
+    }
+    
+    .contactWrap li {
+        justify-content: space-around;
+        display:inline-block;
+        font-size: 1.2em;
+        margin: 1em 0;
+        list-style: none;
+        color: white;
+    }
+    
+    .contact {
+        padding: 1%;
+    }
+    .footIcon {
+        float: left;
+        width: 15%;
+        margin: 3% 0;
+        clear: both;
+        
+    }
+}
+/*------ small desktop ------------*/
+@media screen and (min-width:893px) and (max-width:1920px) {
+    
+    .MainContentWrapDesktop {
+        background-color: rgb(230,235,224);
+    }
+    
+    /*---header -----------*/
+    
+    .headNavDesktopBox {
+        background-color: #ED6A5A;
+        display: block;
+        margin-bottom: 0;
+    }
+    
+    .mainLogo {
+        width: 80%;
+        margin-left: 6%;
+    }
+    
+    .headNavDesktop {
+        position:fixed;
+        top: 0;
+        display: inline;
+        background: rgba(237,106,90, 0.97);
+        min-width: 230px;
+        max-width: 26vw;
+        transition: top 0.5s;
+        z-index: 1;
+    }
+    @media screen and (max-width: 1090px){
+        .naviDesktop ul li a{
+            font-size: 13px;
+        }
+    }
+
+    .icon {
+        width: 26%;
+        padding: 0 3%;
+        
+    }
+
+    .naviDesktop{
+        display: flex;
+        background: rgba(255,255,255, 0.9);
+    }
+    
+    .naviDesktop ul{
+        margin: 0 3rem 0 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex: 1 0 0%;
+        justify-content: space-between;
+    }
+  
+    .naviDesktop ul a{
+        display: block;
+        padding: 5px 10px;
+        color: black;
+        font-size: 1.8rem;
+        transition: 0.5s;
+    }
+
+    .naviDesktop a:hover{
+        color: #ED6A5A;
+    }
+    
+    .headNavDesktopBox .search-container {
+        float: right;
+    }
+
+    .headNavDesktopBox input[type=text] {
+        padding: 1em;
+        margin-top: 0.2em;
+        font-size: 1em;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .headNavDesktopBox .search-container button {
+        float: right;
+        padding: 1em 1.2em;
+        margin: 0.2em 0.2em;
+        background-image: url(../img/icon/search.svg);
+        background-repeat: no-repeat;
+        font-size: 1.6em;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .headNavDesktopBox:after {
+        content: " ";
+        visibility: hidden;
+        display:block;
+        height: 0;
+        clear: both;
+    }
+/*header bottom ---------------------*/
+/* body ---------------------*/
+    
+    .col1 {
+        background-color: #9BC1BC;
+        padding: 5% 1% 2% 1%;
+        border-top-style: groove;
+        
+    }
+    
+    .col1 h2, .col2 h2 {
+        font-size: 7em;
+        color: #5D576B;
+    }
+    
+    .col1 h3{
+        font-size: 3em;
+        color: #ED6A5A;
+        margin-top: 4em;
+    }
+    
+    .col2 iframe {
+        width: 55%;
+        display: flex;
+        align-items: center;
+        margin: 2em auto 5px;
+    }
+    
+    .col2 p {
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .col1 em {
+        font-size: 1em;
+        font-weight: 700;
+    }
+    
+    .col2, .formWrapDesktop {
+        background-color:#F4F1BB;
+        padding: 5% 0 2% 0;
+    }
+    
+    .contactFormDesktop {
+        background: white;
+        padding: 2% 0;
+        margin: 10% auto;
+        width: 90em;
+        height: 100%;
+        
+    }
+    
+    .formContainer {
+        background: #E6EBE0;
+        width: 75%;
+        margin: 5% auto;
+        padding: 5% 1%;
+        border: 2px dotted black;
+        border-radius: 10px;
+        text-align: center;
+        clear:both;
+    }
+    
+    .formContainer h2 {
+        color: #ED6A5A;
+        font-size: 2.5em;
+    }
+    
+    .formContainer input, .formContainer select{
+        display:block;
+        font-size: 2.5em;
+        margin: 1em 0 1em;
+        border-radius: 10px;
+        border: 1px dashed #DBFE87; 
+        width: 75%;
+    }
+    
+    #book {
+        width: 80%;
+        display: inline-block;
+        background-color: #ED6A5A;
+        color: #F4F1BB;
+        font-size: 4em;
+    }
+    
+    .txtbox {
+        min-width: 90%;
+        max-width: 90%;
+        min-height: 200px;
+        max-height: 200px;
+        font-size: 1.6em;
+        overflow: auto;
+        border: 2px dashed grey;
+        padding: 1%;
+        
+    }
+    
+    .txtbox:active {
+        border: 2px solid #F4F1BB;
+    }
+    
+    .col2 p {
+        font-size: 2em;
+    }
+    
+    #instructionParagraf {
+        margin-top: 10em;
+    }
+    
+    .formWrapDesktop {
+        background:#F4F1BB;
+    }
+    
+    .articleWrapDesktop {
+        margin: 12% auto;
+        width: 800px;
+        padding: 0 4%;
+        border-left: 3px solid grey;
+        border-right: 3px solid grey;
+        
+    }
+    
+    .articleWrapDesktop h3 {
+        margin: 5% 1% 0 1%;
+        font-size: 1.5em;
+    }
+
+    .articleWrapDesktop h4 {
+        font-size: 3em;
+        padding: 1% 2%;
+    }
+
+    .articleWrapDesktop h2 {
+        padding: 0 2% 5%;
+    }
+    
+    .articleWrapDesktop p {
+        padding: 1% 2% 10%;
+        margin: 0 ;
+    }
+
+    .articleWrapDesktop a {
+        font-size: inherit;
+        color: inherit;
+    }
+
+    .rollImg img, .headImg img {
+        width: 80%; position:relative;
+        left: 10%;
+        padding: 10% 0;
+    }
+    
+    h2 {
+        color: #5D576B;
+        font-size: 5em;
+        margin-left: 0.1em
+    }
+    
+    p {
+        font-size: 2em;
+        margin: 2em 1em 2em 0.2em
+    }
+    
+    .a1 {
+        background: #F4F1BB;
+        border-top: 2em solid #F4F1BB;
+        border-top-style: groove;
+    }
+    .a2 {
+        background: #9BC1BC;
+        border-top: 2em solid #9BC1BC;
+        border-top-style: groove;
+    }
+/* body bottom -----------------------*/
+/* footer -----------------------------*/
+    .footWrapDesktop {
+        background-color: #5D576B;
+    }
+    
+    .footWrapDesktop:after {
+        content: " ";
+        visibility: hidden;
+        display:block;
+        height: 0;
+        clear: both;
+    }
+    
+    .blockquoteWrap {
+        float:left;
+        width: 25%;
+        line-height:1.5;
+        margin: 2% 2% 0 0;
+        min-width: 180px;
+        
+    }
+    
+    .blockquoteWrap h3 {
+        color: #F4F1BB;
+        font-size: 2.5em;
+        margin-left: 3%;
+    }
+
+    .blockquoteWrap p{
+        text-decoration: underline;
+        color: white;
+    }
+    
+    .blockquoteWrap li {
+        font-size: 1.3em;
+        margin-left: 9%;
+        margin-top: 7%;
+        color: white;
+    }
+    
+    .partnerWrap {
+        float: left;
+        width: 30%;
+        display: inline-block;
+        margin: 2% 2% 2% 0;
+    }
+    
+    .partnerWrap h3 {
+        font-size: 2.5em;
+        color: #F4F1BB;
+    }
+    .partnerWrap li {
+        margin-top: 10%;
+        list-style: none;
+        font-size: 1.3em;
+        color: white;
+    }
+    
+    .contactWrap {
+        margin-top: 2%;
+        width: 40%;
+        display: inline-block; 
+    }
+    
+    .contactWrap h3 {
+        font-size: 2.5em;
+        color: #F4F1BB;
+    }
+    
+    .contactWrap a li{
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.2em;
+        margin: 2em 0;
+        list-style: none;
+        color: white;
+    }
+    
+    .contact {
+        padding: 1%;
+    }
+    .footIcon {
+        float: left;
+        width: 15%;
+        margin: 3% 0;
+        clear: both;
+        
+    }
+}
+
+@media screen and (min-width:300px) and (max-width: 892px){
+    .headNavCell{
+        min-width: 100vw;
+        z-index: 2;
+    }
+
+    .mainLogo{
+        width: 8em;
+    }
+
+    .naviCell{
+      display: flex;
+    }
+
+    .naviCell ul{
+        margin: 0 3rem 0 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex: 1 0 0%;
+        justify-content: space-between;
+    }
+
+    .naviCell ul a{
+        display: block;
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 702px){
+    .blockquoteWrap{
+        width: 100vw;
+    }
+
+    .blockquoteWrap h3, .blockquoteWrap li{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .blockquoteWrap li{
+        margin-top: 2em;
+        font-size: 2em;
+    }
+
+    .partnerWrap {
+        width: 100vw;
+    }
+
+    .partnerWrap h3, .partnerWrap li{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .partnerWrap li{
+        margin-top: 2em;
+        font-size: 2em;
+    }
+
+    .contactWrap {
+        width: 100vw;
+    }
+
+    .contactWrap h3{
+        margin: 1.5em auto;
+        text-align: center;
+
+    }
+
+    .contactWrap li{
+        margin: 1em auto;
+        text-align: center;
+        font-size: 2em;
+        display:block;
+    }
+}
